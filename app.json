@@ -1,0 +1,25 @@
+{
+  "addons": [
+    "heroku-postgresql",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "HEROKU_POSTGRESQL_BRONZE_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "fyle",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
