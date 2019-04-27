@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>
+        HomePage
+    </title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'custom.css' %}">
+</head>
+<body>
+    <div class="forms">
+        <h3>Select a way to Search:</h3>
+        <ul style="list-style-type:none;" id="listoptions">
+            <li><button><a href="/search-name-form/" ><h3>Bank Name & City</h3></a></button></li>
+            <li><button ><a href = "/search-ifsc-form/" ><h3>IFSC code</h3></a></button></li>
+        </ul>
+    </div>
+</body>
+</html>

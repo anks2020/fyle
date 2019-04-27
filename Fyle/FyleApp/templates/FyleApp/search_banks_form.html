@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Search</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'custom.css' %}">
+</head>
+<body>
+    <form class="forms" action="/search-banks/" method="get" >
+        <h4>Enter Bankname & City:</h4>
+        <br  />
+        Name:
+        <input type="text" class="tfield" name="p">
+        <br />
+        City:
+        <input type="text" class="tfield" name="q">
+        <br />
+        <input type="submit" class="submit" value="Search">
+    </form>
+</body>
+</html>

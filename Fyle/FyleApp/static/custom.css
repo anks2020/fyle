@@ -1,0 +1,70 @@
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.submit{
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;}
+
+  .tfield{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;}
+
+  .forms{
+      -webkit-box-shadow: 0 0 18px darkslategrey;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 25%;
+    border: 2px solid gray;
+    width: 45%;
+    border-radius: 26px;
+    padding: 32px;}
+
+ .bigdiv{
+     margin-top: 64px;
+    text-align: center;}
+
+    #counts{
+    font-size:40px;
+    }
+
+    li button {
+        border-radius: 12px;
+        /* padding: 10px; */
+        padding: 6px 20px;
+    }
+    li a {
+    text-decoration: none;
+       }
+    ul#listoptions li {
+    margin: 21px;
+    margin-left: -17px;
+    }

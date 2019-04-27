@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Bank Branches</title>
+{% load static %}
+     <link rel="stylesheet" href="{% static 'custom.css' %}">
+</head>
+<body>
+<div class="bigdiv">
+    <h3> {{ count }} Results found for {{bank}} and {{city}} </h3>
+<hr/>
+<br/>
+<table id="table">
+    <tr>
+        <th>IFSC</th>
+        <th>BANK NAME</th>
+        <th>BRANCH</th>
+        <th>ADDRESS</th>
+        <th>CITY</th>
+        <th>DISTRICT</th>
+        <th>STATE</th>
+    </tr>
+{% for i in result %}
+     <tr>
+
+    <td>
+    {{ i.ifsc }}
+    </td>
+     <td>
+    {{ i.bank_name }}
+    </td>
+   <td>
+    {{ i.branch }}
+    </td>
+    <td>
+    {{ i.address }}
+    </td>
+    <td>
+    {{ i.city }}
+   </td>
+     <td>
+    {{ i.district }}
+   </td>
+     <td>
+    {{ i.state }}
+    </td>
+
+     </tr>
+    {% endfor %}
+</table>
+    </div>
+</body>
+</html>

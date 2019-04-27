@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Search Bank through IFSC</title>
+{% load static %}
+     <link rel="stylesheet" href="{% static 'custom.css' %}">
+</head>
+<body>
+<div class="bigdiv">
+<h4>Result for IFSC : {{result.ifsc}} </h4>
+<hr/>
+<br/>
+<table id="table">
+    <tr>
+        <th>IFSC</th>
+        <th>BANK NAME</th>
+        <th>BRANCH</th>
+        <th>ADDRESS</th>
+        <th>CITY</th>
+        <th>DISTRICT</th>
+        <th>STATE</th>
+    </tr>
+     <tr>
+
+    <td>
+    {{ result.ifsc }}
+    </td>
+     <td>
+    {{ result.bank_name }}
+    </td>
+   <td>
+    {{ result.branch }}
+    </td>
+    <td>
+    {{ result.address }}
+    </td>
+    <td>
+    {{ result.city }}
+   </td>
+     <td>
+    {{ result.district }}
+   </td>
+     <td>
+    {{ result.state }}
+    </td>
+
+     </tr>
+</table>
+    </div>
+</body>
+</html>
