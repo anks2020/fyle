@@ -15,3 +15,8 @@ Given a Bank name and city, result shows the details of alll the branches of tha
 Go ahead and search for you bank details, whenever needed!
 
 PS: It shows details only for banks in India.
+
+Prerequisites:
+Mentioned in requirements.txt file. Run pip install requirements.txt and get all the dependencies installed. 
+
+
